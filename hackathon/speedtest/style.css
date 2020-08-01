@@ -1,0 +1,32 @@
+@media (max-width: 1200px){
+#iframeTest{
+transform: scale(.7);
+-ms-transform: scale(.7); /* IE 9 */
+-webkit-transform: scale(.7); /* Safari and Chrome */
+-o-transform: scale(.7); /* Opera */
+-moz-transform: scale(.7); /* Firefox */
+ width:100%;}
+
+}
+@media (max-width: 655px){
+#iframeTest{
+transform: scale(.7);
+-ms-transform: scale(.7); /* IE 9 */
+-webkit-transform: scale(.7); /* Safari and Chrome */
+-o-transform: scale(.7); /* Opera */
+-moz-transform: scale(.7); /* Firefox */
+  margin-left: -15%; width: 760px; top:-100px;}
+
+}
+@media (max-width: 419px){
+ 
+#iframeTest{
+transform: scale(.5);
+-ms-transform: scale(.5); /* IE 9 */
+-webkit-transform: scale(.5); /* Safari and Chrome */
+-o-transform: scale(.5); /* Opera */
+-moz-transform: scale(.5); /* Firefox */
+top:-130px;}
+     
+	
+}

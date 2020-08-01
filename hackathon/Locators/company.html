@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mapmyindia Maps</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="cstyle.css">
+        <script src="https://apis.mapmyindia.com/advancedmaps/v1/kn4fuhn7lkrzexnc4vdf2pjwhp57x4uh/map_load?v1.1"></script>
+
+              
+
+    </head>
+    <body>
+            <div id="map"></div>
+        <script>
+        /*map initialized*/
+         var map=new MapmyIndia.Map("map",{ center:[20.5937, 78.9629], zoomControl: true, hybrid:true, editable: true , search:true, location:true}); 
+       
+         var LatLng = [
+        [   "   marker  1   "   ,   23.070438   ,   72.517693   ,   "   Lat :   23.070438   <br>    Lon :   72.517693   <br>    Company Name And Address:   Inexture Solutions LLP, India   "    ]      ,
+[   "   marker  2   "   ,   30.692781   ,   76.740875   ,   "   Lat :   30.692781   <br>    Lon :   76.740875   <br>    Company Name And Address:   Cinestyle India, Chandigarh, India  "    ]      ,
+[   "   marker  3   "   ,   9.963611    ,   78.197868   ,   "   Lat :   9.963611    <br>    Lon :   78.197868   <br>    Company Name And Address:   Kalaimagal Educational Institute, Madurai, Tamilnadu, India "    ]      ,
+[   "   marker  4   "   ,   11.330676   ,   77.700012   ,   "   Lat :   11.330676   <br>    Lon :   77.700012   <br>    Company Name And Address:   SPAC Starch Products Ltd, Tamil Nadu, India "    ]      ,
+[   "   marker  5   "   ,   12.966482   ,   77.607162   ,   "   Lat :   12.966482   <br>    Lon :   77.607162   <br>    Company Name And Address:   Eternal Expression Tattoo & Piercing Studio, Bangalore, India   "    ]      ,
+[   "   marker  6   "   ,   28.70911    ,   77.659515   ,   "   Lat :   28.70911    <br>    Lon :   77.659515   <br>    Company Name And Address:   Rclixen Multi Solution Pvt. Ltd., Uttar Pradesh, India  "    ]      ,
+[   "   marker  7   "   ,   28.591084   ,   77.058762   ,   "   Lat :   28.591084   <br>    Lon :   77.058762   <br>    Company Name And Address:   Maple Inc - Study Overseas and Education Consultants, Dwarka, New Delhi, India  "    ]      ,
+[   "   marker  8   "   ,   28.608774   ,   77.354263   ,   "   Lat :   28.608774   <br>    Lon :   77.354263   <br>    Company Name And Address:   Maa Purnagiri Software Solutions Pvt. Ltd., Noida, Uttar Pradesh, India "    ]      ,
+[   "   marker  9   "   ,   30.722801   ,   76.767509   ,   "   Lat :   30.722801   <br>    Lon :   76.767509   <br>    Company Name And Address:   Drish Infotech Ltd, Chandigarh, India   "    ]      ,
+[   "   marker  10  "   ,   28.63434    ,   77.281151   ,   "   Lat :   28.63434    <br>    Lon :   77.281151   <br>    Company Name And Address:   Vcare Techs Web Developing & Web Designing Company, New Delhi, India    "    ]      ,
+[   "   marker  11  "   ,   21.187653   ,   72.816177   ,   "   Lat :   21.187653   <br>    Lon :   72.816177   <br>    Company Name And Address:   Patel Car Body Parts, Surat, Gujarat, India "    ]      ,
+[   "   marker  12  "   ,   18.803829   ,   75.174751   ,   "   Lat :   18.803829   <br>    Lon :   75.174751   <br>    Company Name And Address:   MICRO COMPUTERS, Ashti, Maharashtra, India  "    ]      ,
+[   "   marker  13  "   ,   28.657063   ,   77.142365   ,   "   Lat :   28.657063   <br>    Lon :   77.142365   <br>    Company Name And Address:   Sahaj Infotech Private Limited, Moti Nagar, Delhi, India    "    ]      ,
+[   "   marker  14  "   ,   13.573635   ,   76.97995    ,   "   Lat :   13.573635   <br>    Lon :   76.97995    <br>    Company Name And Address:   Ahobala Telecom, Hanumanthanagara, Karnataka, India "    ]      ,
+[   "   marker  15  "   ,   22.820543   ,   72.759453   ,   "   Lat :   22.820543   <br>    Lon :   72.759453   <br>    Company Name And Address:   MUTHOOT FINANCE Ltd, Mahemdabad, Gujarat, India "    ]      ,
+[   "   marker  16  "   ,   22.745852   ,   75.893059   ,   "   Lat :   22.745852   <br>    Lon :   75.893059   <br>    Company Name And Address:   CDN Solutions Group, LIG Colony, Indore, Madhya Pradesh, India  "    ]      ,
+[   "   marker  17  "   ,   19.432228   ,   74.906219   ,   "   Lat :   19.432228   <br>    Lon :   74.906219   <br>    Company Name And Address:   Sai Computer, Vadala Bahiroba, Maharashtra, India   "    ]      ,
+[   "   marker  18  "   ,   28.544064   ,   77.126183   ,   "   Lat :   28.544064   <br>    Lon :   77.126183   <br>    Company Name And Address:   Axis Bank, Mahipalpur Branch, Mahipalur, New Delhi, India   "    ]      ,
+[   "   marker  19  "   ,   28.676935   ,   77.202141   ,   "   Lat :   28.676935   <br>    Lon :   77.202141   <br>    Company Name And Address:   Axis Bank Ltd Subzi Mandi Branch, Ghanta Ghar, Subzo Mandi, Delhi, India    "    ]      ,
+[   "   marker  20  "   ,   19.145008   ,   72.937637   ,   "   Lat :   19.145008   <br>    Lon :   72.937637   <br>    Company Name And Address:   HIRAL Tektronix Pvt. Ltd., Bhandup (West), Mumbai, Maharashtra, India   "    ]      ,
+[   "   marker  21  "   ,   14.225893   ,   76.40255    ,   "   Lat :   14.225893   <br>    Lon :   76.40255    <br>    Company Name And Address:   Karthikeya Computers, Chitradurga, Karnataka, India "    ]      ,
+[   "   marker  22  "   ,   22.480051   ,   88.295364   ,   "   Lat :   22.480051   <br>    Lon :   88.295364   <br>    Company Name And Address:   Hermes Advertising, Sarsuna, Kolkata, West Bengal, India    "    ]      ,
+[   "   marker  23  "   ,   16.187305   ,   75.704231   ,   "   Lat :   16.187305   <br>    Lon :   75.704231   <br>    Company Name And Address:   Allahabad Bank Bagalkot, Kolkata, India "    ]      ,
+[   "   marker  24  "   ,   27.09082    ,   81.16172    ,   "   Lat :   27.09082    <br>    Lon :   81.16172    <br>    Company Name And Address:   AGRAHARI Enterprises, Safipur, Unnao, Uttar Pradesh, India  "    ]      ,
+[   "   marker  25  "   ,   26.214561   ,   81.821068   ,   "   Lat :   26.214561   <br>    Lon :   81.821068   <br>    Company Name And Address:   Hindustan Aeronautics Limited Korwa, Uttar Pradesh, India   "    ]      ,
+[   "   marker  26  "   ,   25.672827   ,   82.315758   ,   "   Lat :   25.672827   <br>    Lon :   82.315758   <br>    Company Name And Address:   Kunwarpur toll plaza, Kunwarpur, Uttar Pradesh, India   "    ]      ,
+[   "   marker  27  "   ,   31.303356   ,   75.594604   ,   "   Lat :   31.303356   <br>    Lon :   75.594604   <br>    Company Name And Address:   Beebo IT Solutions Pvt. Ltd, Jalandhar, Punjab, India   "    ]      ,
+[   "   marker  28  "   ,   11.017841   ,   76.909065   ,   "   Lat :   11.017841   <br>    Lon :   76.909065   <br>    Company Name And Address:   Resilient Solar Technologies, Coimbatore, Tamil Nadu, India "    ]      ,
+[   "   marker  29  "   ,   28.529205   ,   76.98642    ,   "   Lat :   28.529205   <br>    Lon :   76.98642    <br>    Company Name And Address:   Yogender Commcation, Badusarai, New Delhi, Delhi, India "    ]      ,
+[   "   marker  30  "   ,   12.959543   ,   77.587631   ,   "   Lat :   12.959543   <br>    Lon :   77.587631   <br>    Company Name And Address:   Fullerton India Credit Company Ltd, Bangalore, India    "    ]      ,
+[   "   marker  31  "   ,   26.774849   ,   79.030792   ,   "   Lat :   26.774849   <br>    Lon :   79.030792   <br>    Company Name And Address:   Perfect Computers Solutions, Etawah, Uttar Pradesh, India   "    ]      ,
+[   "   marker  32  "   ,   22.521805   ,   88.364967   ,   "   Lat :   22.521805   <br>    Lon :   88.364967   <br>    Company Name And Address:   Ground Work, Kolkata, West Bengal, India    "    ]      ,
+[   "   marker  33  "   ,   20.072859   ,   73.904121   ,   "   Lat :   20.072859   <br>    Lon :   73.904121   <br>    Company Name And Address:   Winsit Solutions Limited, Ojhar, Maharashtra, India "    ]      ,
+[   "   marker  34  "   ,   9.693903    ,   78.720787   ,   "   Lat :   9.693903    <br>    Lon :   78.720787   <br>    Company Name And Address:   Anbu Communication, Suranam, Tamil Nadu, India  "    ]      ,
+[   "   marker  35  "   ,   23.383003   ,   76.721497   ,   "   Lat :   23.383003   <br>    Lon :   76.721497   <br>    Company Name And Address:   Anurag Graphics, Shujalpur, Madhya Pradesh, India   "    ]      ,
+[   "   marker  36  "   ,   17.030563   ,   80.805641   ,   "   Lat :   17.030563   <br>    Lon :   80.805641   <br>    Company Name And Address:   UMA Communications, Chanubanda, Andhra Pradesh, India   "    ]      ,
+[   "   marker  37  "   ,   19.449888   ,   72.79985    ,   "   Lat :   19.449888   <br>    Lon :   72.79985    <br>    Company Name And Address:   Broadway Infosys, Virar West, Virar, Maharashtra, India "    ]      ,
+[   "   marker  38  "   ,   22.84185    ,   82.198593   ,   "   Lat :   22.84185    <br>    Lon :   82.198593   <br>    Company Name And Address:   Dilendra Prints & Internet Jone, Pasan, Chhattisgarh, India "    ]      ,
+[   "   marker  39  "   ,   21.587643   ,   83.079414   ,   "   Lat :   21.587643   <br>    Lon :   83.079414   <br>    Company Name And Address:   ADMIX Computer Center, Sarangarh, Chhattisgarh, India   "    ]      ,
+[   "   marker  40  "   ,   23.423939   ,   76.289436   ,   "   Lat :   23.423939   <br>    Lon :   76.289436   <br>    Company Name And Address:   Balaji Marketing & Services, Shajapur, Madhya Pradesh, India    "    ]      ,
+[   "   marker  41  "   ,   26.012802   ,   89.977562   ,   "   Lat :   26.012802   <br>    Lon :   89.977562   <br>    Company Name And Address:   JR Computer'S, Santi Nagar, Dhubri, Assam, India    "    ]      ,
+[   "   marker  42  "   ,   23.917738   ,   76.914803   ,   "   Lat :   23.917738   <br>    Lon :   76.914803   <br>    Company Name And Address:   Shri Krishna Photocopy and Stationary, Biaora, Madhya Pradesh, India    "    ]      ,
+[   "   marker  43  "   ,   26.915285   ,   75.747086   ,   "   Lat :   26.915285   <br>    Lon :   75.747086   <br>    Company Name And Address:   Instaapply, Hanuman Nagar, Jaipur, Rajasthan, India "    ]      ,
+[   "   marker  44  "   ,   30.587975   ,   76.841713   ,   "   Lat :   30.587975   <br>    Lon :   76.841713   <br>    Company Name And Address:   Star Studio Derabassi, Dera Bassi, Punjab, India    "    ]      ,
+[   "   marker  45  "   ,   11.930902   ,   79.478455   ,   "   Lat :   11.930902   <br>    Lon :   79.478455   <br>    Company Name And Address:   Nehru Yuva Kendra, Villuppuram District, Tamilnadu State, India "    ]      ,
+[   "   marker  46  "   ,   11.330638   ,   77.700111   ,   "   Lat :   11.330638   <br>    Lon :   77.700111   <br>    Company Name And Address:   SPAC STARCH Products (India) LTD, Palayapalayam, Erode, Tamil Nadu, India   "    ]      ,
+[   "   marker  47  "   ,   20.15   ,   72.790001   ,   "   Lat :   20.15   <br>    Lon :   72.790001   <br>    Company Name And Address:   India Infoline Finance Ltd., Shiv Kumari Nagri, Umargam, Gujarat, India "    ]      ,
+[   "   marker  48  "   ,   21.063929   ,   79.880074   ,   "   Lat :   21.063929   <br>    Lon :   79.880074   <br>    Company Name And Address:   RAVINDRA (APNA CSC SETU Kendra), Pimpalgaon, Sadak, Maharashtra, India  "    ]      ,
+[   "   marker  49  "   ,   30.212601   ,   74.940147   ,   "   Lat :   30.212601   <br>    Lon :   74.940147   <br>    Company Name And Address:   Adidas Store, Mall Road, Bathinda, Punjab ,India    "    ]      ,
+[   "   marker  50  "   ,   27.465809   ,   75.598602   ,   "   Lat :   27.465809   <br>    Lon :   75.598602   <br>    Company Name And Address:   Krishana Garments, Shrimadhopur, Rajasthan, India   "    ]      ,
+[   "   marker  51  "   ,   28.648657   ,   77.162758   ,   "   Lat :   28.648657   <br>    Lon :   77.162758   <br>    Company Name And Address:   Web Click India, Shadipur, Patel Nagar New Delhi, Delhi, India  "    ]      ,
+[   "   marker  52  "   ,   26.233402   ,   78.219131   ,   "   Lat :   26.233402   <br>    Lon :   78.219131   <br>    Company Name And Address:   Swati Infotech Infront, Morar, Gwalior, Madhya Pradesh, India   "    ]      ,
+[   "   marker  53  "   ,   22.048376   ,   80.718918   ,   "   Lat :   22.048376   <br>    Lon :   80.718918   <br>    Company Name And Address:   Vikas Computer And Telecom, Malnajkhand, Madhya Pradesh, India  "    ]      ,
+[   "   marker  54  "   ,   31.360512   ,   76.04203    ,   "   Lat :   31.360512   <br>    Lon :   76.04203    <br>    Company Name And Address:   Bharaj Computers, Mahilpur, Punjab, India   "    ]      ,
+[   "   marker  55  "   ,   28.509426   ,   75.937607   ,   "   Lat :   28.509426   <br>    Lon :   75.937607   <br>    Company Name And Address:   Rajeev Gandhi Computer Saksharta Mission, Badhra, Haryana, India    "    ]      ,
+[   "   marker  56  "   ,   19.087795   ,   82.016663   ,   "   Lat :   19.087795   <br>    Lon :   82.016663   <br>    Company Name And Address:   COMPUTER GALAXY, Jagdalpur, Chhattisgarh, India "    ]      ,
+[   "   marker  57  "   ,   29.395174   ,   76.962219   ,   "   Lat :   29.395174   <br>    Lon :   76.962219   <br>    Company Name And Address:   Bhardwaj Customer Service center, Weavers' Colony Panipat, Haryana, India   "    ]      ,
+[   "   marker  58  "   ,   26.742075   ,   77.033463   ,   "   Lat :   26.742075   <br>    Lon :   77.033463   <br>    Company Name And Address:   JOSHI COMPUTERS, Mohan Nagar, Hindaun City, Karauli, Rajasthan, India   "    ]      ,
+[   "   marker  59  "   ,   24.327261   ,   75.651054   ,   "   Lat :   24.327261   <br>    Lon :   75.651054   <br>    Company Name And Address:   MALWA STORS, Garoth, Madhya Pradesh, India  "    ]      ,
+[   "   marker  60  "   ,   20.191561   ,   83.515419   ,   "   Lat :   20.191561   <br>    Lon :   83.515419   <br>    Company Name And Address:   BOOK LAND, Madanpur Rampur, Odisha, India   "    ]      ,
+[   "   marker  61  "   ,   23.301376   ,   78.44413    ,   "   Lat :   23.301376   <br>    Lon :   78.44413    <br>    Company Name And Address:   Harsh Computers, Murai Mohalla, Indore, Madhya Pradesh, India   "    ]      ,
+[   "   marker  62  "   ,   15.750794   ,   76.1922 ,   "   Lat :   15.750794   <br>    Lon :   76.1922 <br>    Company Name And Address:   Srushti Enterprises, Kushtagi, Karnataka, India "    ]      ,
+[   "   marker  63  "   ,   20.946373   ,   86.129646   ,   "   Lat :   20.946373   <br>    Lon :   86.129646   <br>    Company Name And Address:   Bittiyam B Solution, Jaipur Road, Odisha, India "    ]      ,
+[   "   marker  64  "   ,   11.383408   ,   75.735703   ,   "   Lat :   11.383408   <br>    Lon :   75.735703   <br>    Company Name And Address:   Rose Medicals, Thiruvangoor, Kozhikode, Kerala, India   "    ]      ,
+[   "   marker  65  "   ,   11.141654   ,   79.072189   ,   "   Lat :   11.141654   <br>    Lon :   79.072189   <br>    Company Name And Address:   Sriandavar Computers, Ariyalur, Tamil Nadu, India   "    ]      ,
+[   "   marker  66  "   ,   19.472622   ,   82.808708   ,   "   Lat :   19.472622   <br>    Lon :   82.808708   <br>    Company Name And Address:   AK EduTech, Jaipatna, Odisha, India "    ]      ,
+[   "   marker  67  "   ,   23.855354   ,   78.795784   ,   "   Lat :   23.855354   <br>    Lon :   78.795784   <br>    Company Name And Address:   RADIUM Corner And Computers, Sagar, Adarsh Nagar, Madhya Pradesh, India "    ]      ,
+[   "   marker  68  "   ,   10.830405   ,   78.675568   ,   "   Lat :   10.830405   <br>    Lon :   78.675568   <br>    Company Name And Address:   Digital Net Center, Woraiyur, Tiruchirappalli, Tamil Nadu, India    "    ]      ,
+[   "   marker  69  "   ,   23.899797   ,   79.194237   ,   "   Lat :   23.899797   <br>    Lon :   79.194237   <br>    Company Name And Address:   Vandana Studio, Patharia, Madhya Pradesh, India "    ]      ,
+[   "   marker  70  "   ,   25.290571   ,   80.569427   ,   "   Lat :   25.290571   <br>    Lon :   80.569427   <br>    Company Name And Address:   Dipti Computer Services, Atarra, Uttar Pradesh, India   "    ]      ,
+[   "   marker  71  "   ,   18.629969   ,   73.79277    ,   "   Lat :   18.629969   <br>    Lon :   73.79277    <br>    Company Name And Address:   Morya Bharat Gas, Pimpri-Chinchwad, Pune, Maharashtra, India    "    ]      ,
+[   "   marker  72  "   ,   21.454344   ,   80.196075   ,   "   Lat :   21.454344   <br>    Lon :   80.196075   <br>    Company Name And Address:   Hdb Financial Services Ltd., Gondia, Maharashtra, India "    ]      ,
+[   "   marker  73  "   ,   26.120888   ,   85.364723   ,   "   Lat :   26.120888   <br>    Lon :   85.364723   <br>    Company Name And Address:   Designindia, Islampur, Muzaffarpur, Bihar, india    "    ]      ,
+[   "   marker  74  "   ,   25.39164    ,   82.570732   ,   "   Lat :   25.39164    <br>    Lon :   82.570732   <br>    Company Name And Address:   Payal Talkies, Chedibeer, Bhadohi, Uttar Pradesh, India "    ]      ,
+[   "   marker  75  "   ,   22.639627   ,   87.324593   ,   "   Lat :   22.639627   <br>    Lon :   87.324593   <br>    Company Name And Address:   Salboni Youth Computer, Salboni, West Bengal, India "    ]      ,
+[   "   marker  76  "   ,   11.650274   ,   78.477257   ,   "   Lat :   11.650274   <br>    Lon :   78.477257   <br>    Company Name And Address:   SRI Yoga Studio, Puthiragoundampalayam, Tamil Nadu, India   "    ]      ,
+[   "   marker  77  "   ,   19.120512   ,   72.870087   ,   "   Lat :   19.120512   <br>    Lon :   72.870087   <br>    Company Name And Address:   SME Chamber of India, Andheri East Mumbai, Maharashtra, india   "    ]      ,
+[   "   marker  78  "   ,   18.62545    ,   75.674416   ,   "   Lat :   18.62545    <br>    Lon :   75.674416   <br>    Company Name And Address:   Uttam Enterprises, Sonewadi, Bhoom, Maharashtra, India  "    ]      ,
+[   "   marker  79  "   ,   17.854  ,   79.375465   ,   "   Lat :   17.854  <br>    Lon :   79.375465   <br>    Company Name And Address:   Gouthami Grahpics, Ghanpur, Telangana, India    "    ]      ,
+[   "   marker  80  "   ,   22.274424   ,   70.788956   ,   "   Lat :   22.274424   <br>    Lon :   70.788956   <br>    Company Name And Address:   Karmm International, Rajkot, Gujarat, India "    ]      ,
+[   "   marker  81  "   ,   17.477417   ,   73.371025   ,   "   Lat :   17.477417   <br>    Lon :   73.371025   <br>    Company Name And Address:   Jagrut Computers, Marg Tamhane, Maharashtra, India  "    ]      ,
+[   "   marker  82  "   ,   18.689816   ,   73.751266   ,   "   Lat :   18.689816   <br>    Lon :   73.751266   <br>    Company Name And Address:   Shree Samarth Medical, Haveli, Pune, Maharashtra, India "    ]      ,
+[   "   marker  83  "   ,   11.238008   ,   78.865997   ,   "   Lat :   11.238008   <br>    Lon :   78.865997   <br>    Company Name And Address:   Star Xerox, Super Nagar, Perambalur, Tamil Nadu "    ]      ,
+[   "   marker  84  "   ,   30.709011   ,   76.707115   ,   "   Lat :   30.709011   <br>    Lon :   76.707115   <br>    Company Name And Address:   Code Garage Tech, Sector 73, Chandigarh, Punjab, India  "    ]      ,
+[   "   marker  85  "   ,   11.514195   ,   79.321198   ,   "   Lat :   11.514195   <br>    Lon :   79.321198   <br>    Company Name And Address:   Sri Durga Vilas, Virudhachalam, Tamil Nadu, India   "    ]      ,
+[   "   marker  86  "   ,   15.476202   ,   80.050224   ,   "   Lat :   15.476202   <br>    Lon :   80.050224   <br>    Company Name And Address:   KNR Technologies & Solutions, Ramnagar Ongole, Andhra Pradesh, India    "    ]      ,
+[   "   marker  87  "   ,   25.579172   ,   83.575249   ,   "   Lat :   25.579172   <br>    Lon :   83.575249   <br>    Company Name And Address:   BSA, Mahuabagh, Ghazipur, Uttar Pradesh, India  "    ]      ,
+[   "   marker  88  "   ,   9.173914    ,   77.868088   ,   "   Lat :   9.173914    <br>    Lon :   77.868088   <br>    Company Name And Address:   Incorp Computers, Kovilpatti, Tamil Nadu, India "    ]      ,
+[   "   marker  89  "   ,   22.725021   ,   88.484093   ,   "   Lat :   22.725021   <br>    Lon :   88.484093   <br>    Company Name And Address:   Dutta & Agarwal Nurse Physiotheraphy Service Centre, West Bengal, India "    ]      ,
+[   "   marker  90  "   ,   12.211948   ,   76.906158   ,   "   Lat :   12.211948   <br>    Lon :   76.906158   <br>    Company Name And Address:   Amstech computer, Narasipura, Karnataka, India  "    ]      ,
+[   "   marker  91  "   ,   30.905405   ,   75.852013   ,   "   Lat :   30.905405   <br>    Lon :   75.852013   <br>    Company Name And Address:   Raj Ppuri Computers, Govind Pura, Ludhiana, Punjab  "    ]      ,
+[   "   marker  92  "   ,   27.896471   ,   76.28199    ,   "   Lat :   27.896471   <br>    Lon :   76.28199    <br>    Company Name And Address:   SHRI KRISHNA COMPUTER & EMITRA CENTER, Behror, Rajasthan, India "    ]      ,
+[   "   marker  93  "   ,   23.07579    ,   72.526413   ,   "   Lat :   23.07579    <br>    Lon :   72.526413   <br>    Company Name And Address:   LetsNurture Infotech Pvt. LTD., Ahmedabad, Gujarat, India   "    ]      ,
+[   "   marker  94  "   ,   25.180346   ,   88.029381   ,   "   Lat :   25.180346   <br>    Lon :   88.029381   <br>    Company Name And Address:   M & S Print House (Mosam), Shibnagar, West Bengal, India    "    ]      ,
+[   "   marker  95  "   ,   19.656891   ,   76.122208   ,   "   Lat :   19.656891   <br>    Lon :   76.122208   <br>    Company Name And Address:   Aadarsh Zerox & DTP, Ranjani, Jalna, Maharashtra, India "    ]      ,
+[   "   marker  96  "   ,   20.33065    ,   74.237091   ,   "   Lat :   20.33065    <br>    Lon :   74.237091   <br>    Company Name And Address:   Sai Computech, Chandwad, Maharashtra, India "    ]      ,
+[   "   marker  97  "   ,   18.988695   ,   75.756218   ,   "   Lat :   18.988695   <br>    Lon :   75.756218   <br>    Company Name And Address:   KAHEKASHA Collection, Beed, Maharashta, India   "    ]      ,
+[   "   marker  98  "   ,   10.985936   ,   76.965408   ,   "   Lat :   10.985936   <br>    Lon :   76.965408   <br>    Company Name And Address:   Ukkadam, Coimbatore, Tamil Nadu, India  "    ]      ,
+[   "   marker  99  "   ,   13.002481   ,   80.262596   ,   "   Lat :   13.002481   <br>    Lon :   80.262596   <br>    Company Name And Address:   MONTFORT SIRAHUGAL, Chennai, Tamil Nadu, India  "    ]      ,
+[   "   marker  100 "   ,   25.063938   ,   75.846596   ,   "   Lat :   25.063938   <br>    Lon :   75.846596   <br>    Company Name And Address:   Jain Industries, Ware House Ranpur, Kota, Rajasthan, India  "    ]      ,
+[   "   marker  101 "   ,   21.669415   ,   87.492355   ,   "   Lat :   21.669415   <br>    Lon :   87.492355   <br>    Company Name And Address:   Lifeindia Solutions and Travels, Rautrapur, West Bengal, India  "    ]      ,
+[   "   marker  102 "   ,   28.558346   ,   77.253082   ,   "   Lat :   28.558346   <br>    Lon :   77.253082   <br>    Company Name And Address:   Manacle Technologies Pvt Ltd, East of Kailash, New Delhi, Delhi, India  "    ]      ,
+[   "   marker  103 "   ,   22.882219   ,   88.01442    ,   "   Lat :   22.882219   <br>    Lon :   88.01442    <br>    Company Name And Address:   Tarakeswar Railway Station, Tarkeshwar, West Bengal, India  "    ]      ,
+[   "   marker  104 "   ,   21.824495   ,   76.351425   ,   "   Lat :   21.824495   <br>    Lon :   76.351425   <br>    Company Name And Address:   ALL Mobile Phone Service Center, Khandwa, Madhya Pradesh, India "    ]      ,
+[   "   marker  105 "   ,   18.642179   ,   72.985435   ,   "   Lat :   18.642179   <br>    Lon :   72.985435   <br>    Company Name And Address:   SUBIO LIFECARE, Mondvira, Maharashtra, India    "    ]      ,
+[   "   marker  106 "   ,   28.912327   ,   75.608299   ,   "   Lat :   28.912327   <br>    Lon :   75.608299   <br>    Company Name And Address:   Valecha Computers, Siwani, Haryana, India   "    ]      ,
+[   "   marker  107 "   ,   23.979115   ,   88.623413   ,   "   Lat :   23.979115   <br>    Lon :   88.623413   <br>    Company Name And Address:   BISHAL AUTO XEROX & COMPUTER, Karimpur, West Bengal, India  "    ]      ,
+[   "   marker  108 "   ,   25.17738    ,   81.620033   ,   "   Lat :   25.17738    <br>    Lon :   81.620033   <br>    Company Name And Address:   Dev Computer Shankargarh, Pagwar, Uttar Pradesh, India  "    ]      ,
+[   "   marker  109 "   ,   18.506779   ,   73.82354    ,   "   Lat :   18.506779   <br>    Lon :   73.82354    <br>    Company Name And Address:   OMKAR COMPUTERS, Sheela Vihar Colony, Pune, Maharashtra, India  "    ]      ,
+[   "   marker  110 "   ,   31.65304    ,   74.860947   ,   "   Lat :   31.65304    <br>    Lon :   74.860947   <br>    Company Name And Address:   Creative I Tecnologies, Amritsar, Punjab, India "    ]      ,
+[   "   marker  111 "   ,   22.292919   ,   70.754021   ,   "   Lat :   22.292919   <br>    Lon :   70.754021   <br>    Company Name And Address:   Kishna Grachics, Yogi Nagar, Rajkot, Gujarat, India "    ]      ,
+[   "   marker  112 "   ,   9.17085 ,   77.865204   ,   "   Lat :   9.17085 <br>    Lon :   77.865204   <br>    Company Name And Address:   K2K Net Solution, Kovilpatti, Tamil Nadu, India "    ]      ,
+[   "   marker  113 "   ,   19.177322   ,   72.867859   ,   "   Lat :   19.177322   <br>    Lon :   72.867859   <br>    Company Name And Address:   Shiv Shakti Co-operative Housing Society Ltd, Mumbai, Maharashtra, India    "    ]      ,
+[   "   marker  114 "   ,   19.211023   ,   73.09185    ,   "   Lat :   19.211023   <br>    Lon :   73.09185    <br>    Company Name And Address:   Vishal Ayurvedic Pharmacy, Dombivli, Maharashtra, India "    ]      ,
+[   "   marker  115 "   ,   17.172089   ,   78.291786   ,   "   Lat :   17.172089   <br>    Lon :   78.291786   <br>    Company Name And Address:   VINS Bioproducts LTD, Thimmapur, Telangana, India   "    ]      ,
+[   "   marker  116 "   ,   23.301331   ,   78.444138   ,   "   Lat :   23.301331   <br>    Lon :   78.444138   <br>    Company Name And Address:   HARSH Computers, Silwani, Madhya Pradesh, India "    ]      ,
+[   "   marker  117 "   ,   20.810421   ,   75.7742 ,   "   Lat :   20.810421   <br>    Lon :   75.7742 <br>    Company Name And Address:   SAISOFT COMPUTER, Jamner, Maharashtra, India    "    ]      ,
+[   "   marker  118 "   ,   8.443186    ,   77.916603   ,   "   Lat :   8.443186    <br>    Lon :   77.916603   <br>    Company Name And Address:   Ezhil Computers, Sathankulam, Tamil Nadu, India "    ]      ,
+[   "   marker  119 "   ,   19.258726   ,   76.795845   ,   "   Lat :   19.258726   <br>    Lon :   76.795845   <br>    Company Name And Address:   Arohi Mobile Shopee & Multiservices, Mangal Murti Nagar, Parbhani, Maharashtra, India   "    ]      ,
+[   "   marker  120 "   ,   21.08927    ,   79.089928   ,   "   Lat :   21.08927    <br>    Lon :   79.089928   <br>    Company Name And Address:   Besa, Nagpur, Maharashtra, India    "    ]      ,
+[   "   marker  121 "   ,   18.506231   ,   73.843925   ,   "   Lat :   18.506231   <br>    Lon :   73.843925   <br>    Company Name And Address:   Indulal Complex, Sadashiv Peth, Pune, Maharashtra, India    "    ]      ,
+[   "   marker  122 "   ,   21.839993   ,   83.366104   ,   "   Lat :   21.839993   <br>    Lon :   83.366104   <br>    Company Name And Address:   Pramode Rce Mill, Raigarh, Chhattisgarh, India  "    ]      ,
+[   "   marker  123 "   ,   22.426626   ,   72.767868   ,   "   Lat :   22.426626   <br>    Lon :   72.767868   <br>    Company Name And Address:   Pharmanza Herbal Pvt Ltd, Kaniya, Gujarat, India    "    ]      ,
+[   "   marker  124 "   ,   18.960945   ,   74.280602   ,   "   Lat :   18.960945   <br>    Lon :   74.280602   <br>    Company Name And Address:   MALGANGA COMPUTER, Nighoj, Maharashtra, India   "    ]      ,
+[   "   marker  125 "   ,   12.925007   ,   77.593803   ,   "   Lat :   12.925007   <br>    Lon :   77.593803   <br>    Company Name And Address:   SAN IT SOLUTIONS, Jayanagar, Bangalore, Karnataka, India    "    ]      ,
+[   "   marker  126 "   ,   29.621546   ,   74.856903   ,   "   Lat :   29.621546   <br>    Lon :   74.856903   <br>    Company Name And Address:   SOLANKI PHOTOSTAT & LAMINATION, Kharian, Haryana, India "    ]      ,
+[   "   marker  127 "   ,   18.503378   ,   74.000038   ,   "   Lat :   18.503378   <br>    Lon :   74.000038   <br>    Company Name And Address:   Kumbhar wada, Kavdigaon, Pune, Maharashtra, India   "    ]      ,
+[   "   marker  128 "   ,   12.976632   ,   77.547089   ,   "   Lat :   12.976632   <br>    Lon :   77.547089   <br>    Company Name And Address:   Vtech Biotron Pvt Ltd, Bangalore, Karnataka, India  "    ]      ,
+[   "   marker  129 "   ,   25.450705   ,   81.769875   ,   "   Lat :   25.450705   <br>    Lon :   81.769875   <br>    Company Name And Address:   FEATURES Cyber Cafe, Allahabad, Uttar Pradesh, India    "    ]      ,
+[   "   marker  130 "   ,   25.444174   ,   78.579369   ,   "   Lat :   25.444174   <br>    Lon :   78.579369   <br>    Company Name And Address:   Rai Photostate & Digital Studio, Jhansi, Uttar Pradesh, India   "    ]      ,
+[   "   marker  131 "   ,   23.018047   ,   76.715973   ,   "   Lat :   23.018047   <br>    Lon :   76.715973   <br>    Company Name And Address:   SAKSHI Computer, Ashta, Madhya Pradesh, India   "    ]      ,
+[   "   marker  132 "   ,   28.509413   ,   75.937614   ,   "   Lat :   28.509413   <br>    Lon :   75.937614   <br>    Company Name And Address:   Paramount Institute, Badhra, Haryana, India "    ]      ,
+[   "   marker  133 "   ,   21.173115   ,   79.117348   ,   "   Lat :   21.173115   <br>    Lon :   79.117348   <br>    Company Name And Address:   Dlink Computer Internet Cafe, Nagpur, Maharashtra, India    "    ]      ,
+[   "   marker  134 "   ,   21.686178   ,   75.093239   ,   "   Lat :   21.686178   <br>    Lon :   75.093239   <br>    Company Name And Address:   Gupta Computers, Sendhwa, Madhya Pradesh, India "    ]      ,
+[   "   marker  135 "   ,   22.071871   ,   82.158165   ,   "   Lat :   22.071871   <br>    Lon :   82.158165   <br>    Company Name And Address:   Edutech Group of Education, Bilaspur, India "    ]      ,
+[   "   marker  136 "   ,   14.461302   ,   79.989243   ,   "   Lat :   14.461302   <br>    Lon :   79.989243   <br>    Company Name And Address:   Kamakshi Tours and Travels, Nellore, Andhra Pradesh, India  "    ]      ,
+[   "   marker  137 "   ,   15.231288   ,   75.577156   ,   "   Lat :   15.231288   <br>    Lon :   75.577156   <br>    Company Name And Address:   Shree Durga Communication, Shirahatti, Karnataka, India "    ]      ,
+[   "   marker  138 "   ,   12.085938   ,   78.29142    ,   "   Lat :   12.085938   <br>    Lon :   78.29142    <br>    Company Name And Address:   Ashoka Computer Center, Kadathur, Tamil Nadu, India "    ]      ,
+[   "   marker  139 "   ,   16.80349    ,   81.524734   ,   "   Lat :   16.80349    <br>    Lon :   81.524734   <br>    Company Name And Address:   Bhavani Digitals, Tadepalligudem, Andhra Pradesh, India "    ]      ,
+[   "   marker  140 "   ,   23.203112   ,   77.414276   ,   "   Lat :   23.203112   <br>    Lon :   77.414276   <br>    Company Name And Address:   Sindhuja enterprises, Bhopal, Madhya Pradesh, India "    ]      ,
+[   "   marker  141 "   ,   8.826025    ,   76.810104   ,   "   Lat :   8.826025    <br>    Lon :   76.810104   <br>    Company Name And Address:   Pallikkal, Kerala, India    "    ]      ,
+[   "   marker  142 "   ,   26.604582   ,   81.363266   ,   "   Lat :   26.604582   <br>    Lon :   81.363266   <br>    Company Name And Address:   PARIJAT INFOSOLUTIONS Computer Sales&Repair Center, Haidargarh, Uttar Pradesh, India    "    ]      ,
+[   "   marker  143 "   ,   19.305767   ,   75.443855   ,   "   Lat :   19.305767   <br>    Lon :   75.443855   <br>    Company Name And Address:   Raj Digital Multimedia Services, Bodhegoan, Maharashtra, India  "    ]      ,
+[   "   marker  144 "   ,   21.480503   ,   83.981163   ,   "   Lat :   21.480503   <br>    Lon :   83.981163   <br>    Company Name And Address:   Anima Electronics and Appliances, Sambalpur, Odisha, India  "    ]      ,
+[   "   marker  145 "   ,   13.637117   ,   74.770676   ,   "   Lat :   13.637117   <br>    Lon :   74.770676   <br>    Company Name And Address:   SOFTECHGO, Kandlur, Karnataka, India    "    ]      ,
+[   "   marker  146 "   ,   17.765882   ,   83.19471    ,   "   Lat :   17.765882   <br>    Lon :   83.19471    <br>    Company Name And Address:   Andhra Cements Company LTD, Visakhapatnam, Andhra Pradesh, India    "    ]      ,
+[   "   marker  147 "   ,   13.001773   ,   76.098305   ,   "   Lat :   13.001773   <br>    Lon :   76.098305   <br>    Company Name And Address:   i-Tech Computers, Hassan, Karnataka, India  "    ]      ,
+[   "   marker  148 "   ,   29.336311   ,   77.089119   ,   "   Lat :   29.336311   <br>    Lon :   77.089119   <br>    Company Name And Address:   Excel Net Computer, Bapauli, Haryana, India "    ]      ,
+[   "   marker  149 "   ,   26.877045   ,   81.039497   ,   "   Lat :   26.877045   <br>    Lon :   81.039497   <br>    Company Name And Address:   Icon websoft Solution, Lucknow, Uttar Pradesh, India    "    ]      ,
+[   "   marker  150 "   ,   30.303604   ,   78.045464   ,   "   Lat :   30.303604   <br>    Lon :   78.045464   <br>    Company Name And Address:   Vishal Computer Solutions, Dehradun, Uttarkand, India   "    ]      ,
+[   "   marker  151 "   ,   19.958752   ,   79.294868   ,   "   Lat :   19.958752   <br>    Lon :   79.294868   <br>    Company Name And Address:   Shri Sai Medicals, Chandrapur, Maharashtra, India   "    ]      ,
+[   "   marker  152 "   ,   23.705372   ,   72.536789   ,   "   Lat :   23.705372   <br>    Lon :   72.536789   <br>    Company Name And Address:   Umiya Auto, Visnagar, Gujarat, India    "    ]      ,
+[   "   marker  153 "   ,   13.0216 ,   80.225555   ,   "   Lat :   13.0216 <br>    Lon :   80.225555   <br>    Company Name And Address:   Artisan Entertainments P Ltd, Chennai, Tamil Nadu, India    "    ]      ,
+[   "   marker  154 "   ,   16.389654   ,   75.110756   ,   "   Lat :   16.389654   <br>    Lon :   75.110756   <br>    Company Name And Address:   Vinayak Photo Shop, Mahalingapur, Karnataka, India  "    ]      ,
+[   "   marker  155 "   ,   19.860315   ,   75.324127   ,   "   Lat :   19.860315   <br>    Lon :   75.324127   <br>    Company Name And Address:   Jivak Healthcare, Aurangabad, Maharashtra, India    "    ]      ,
+[   "   marker  156 "   ,   21.544838   ,   81.797691   ,   "   Lat :   21.544838   <br>    Lon :   81.797691   <br>    Company Name And Address:   Tejswi Video & computer, Tilda, Chhattisgarh, India "    ]      ,
+[   "   marker  157 "   ,   25.987906   ,   79.452438   ,   "   Lat :   25.987906   <br>    Lon :   79.452438   <br>    Company Name And Address:   Abhishek CSC Kendra & Lokvani Kendra, Orai, Uttar Pradesh, India    "    ]      ,
+[   "   marker  158 "   ,   29.989744   ,   76.587967   ,   "   Lat :   29.989744   <br>    Lon :   76.587967   <br>    Company Name And Address:   KRM Infotel Pvt. Ltd., Pehowa, Haryana, India   "    ]      ,
+[   "   marker  159 "   ,   29.313585   ,   78.513107   ,   "   Lat :   29.313585   <br>    Lon :   78.513107   <br>    Company Name And Address:   Agarwal Book Depot, Dhampur, Uttar Pradesh, India   "    ]      ,
+[   "   marker  160 "   ,   23.665783   ,   86.152725   ,   "   Lat :   23.665783   <br>    Lon :   86.152725   <br>    Company Name And Address:   Dialur Search pvt. ltd, Bokaro Steel City, Jharkhand, India "    ]      ,
+[   "   marker  161 "   ,   26.795387   ,   80.917709   ,   "   Lat :   26.795387   <br>    Lon :   80.917709   <br>    Company Name And Address:   iEnigma Tech Solutions, Lucknow, Uttar Pradesh, India   "    ]      ,
+[   "   marker  162 "   ,   29.109575   ,   77.260773   ,   "   Lat :   29.109575   <br>    Lon :   77.260773   <br>    Company Name And Address:   Baraut Suzuki, Baraut, Uttar Pradesh, India "    ]      ,
+[   "   marker  163 "   ,   23.012932   ,   72.529816   ,   "   Lat :   23.012932   <br>    Lon :   72.529816   <br>    Company Name And Address:   Host IT Smart, Navrangpura, Ahmedabad, Gujarat, India   "    ]      ,
+[   "   marker  164 "   ,   27.066196   ,   82.234482   ,   "   Lat :   27.066196   <br>    Lon :   82.234482   <br>    Company Name And Address:   ITI Mankapur, Mankapur, Uttar Pradesh, India    "    ]      ,
+[   "   marker  165 "   ,   26.921476   ,   81.18055    ,   "   Lat :   26.921476   <br>    Lon :   81.18055    <br>    Company Name And Address:   TDM Office Bsnl Main Exchange, Awas Vikas Colony, Barabanki, Uttar Pradesh, India   "    ]      ,
+[   "   marker  166 "   ,   26.264315   ,   87.827957   ,   "   Lat :   26.264315   <br>    Lon :   87.827957   <br>    Company Name And Address:   Imran Computer, Bahadurganj, Bihar, India   "    ]      ,
+[   "   marker  167 "   ,   12.977527   ,   77.635864   ,   "   Lat :   12.977527   <br>    Lon :   77.635864   <br>    Company Name And Address:   Innoplix Office, Bangalore, Karnataka, India    "    ]      ,
+[   "   marker  168 "   ,   18.907686   ,   78.812607   ,   "   Lat :   18.907686   <br>    Lon :   78.812607   <br>    Company Name And Address:   Raikal, Telangana, India    "    ]      ,
+[   "   marker  169 "   ,   23.045034   ,   72.514359   ,   "   Lat :   23.045034   <br>    Lon :   72.514359   <br>    Company Name And Address:   Widetech, Thaltej, Ahmedabad, Gujarat, India    "    ]      ,
+[   "   marker  170 "   ,   29.202587   ,   78.958969   ,   "   Lat :   29.202587   <br>    Lon :   78.958969   <br>    Company Name And Address:   Minerva, the Cyberspace (CSC Center), Kashipur, Uttarakhand, India  "    ]      ,
+[   "   marker  171 "   ,   11.104918   ,   79.736832   ,   "   Lat :   11.104918   <br>    Lon :   79.736832   <br>    Company Name And Address:   Sowra Net Center, Sembanarkoil, Tamil Nadu, India   "    ]      ,
+[   "   marker  172 "   ,   33.732395   ,   75.151283   ,   "   Lat :   33.732395   <br>    Lon :   75.151283   <br>    Company Name And Address:   SKynet Solutions, Mattan Chowk, Anantnag, Jammu and Kashmir, India  "    ]      ,
+[   "   marker  173 "   ,   9.149082    ,   76.590614   ,   "   Lat :   9.149082    <br>    Lon :   76.590614   <br>    Company Name And Address:   Malamelchantha Akshaya Centre, Vallikunnam, Kerala, India   "    ]      ,
+[   "   marker  174 "   ,   22.969172   ,   79.083672   ,   "   Lat :   22.969172   <br>    Lon :   79.083672   <br>    Company Name And Address:   Faisal Computers Rankai, Rankai, Madhya Pradesh, India  "    ]      ,
+[   "   marker  175 "   ,   26.563124   ,   88.81916    ,   "   Lat :   26.563124   <br>    Lon :   88.81916    <br>    Company Name And Address:   IOTech Computer Center, Maynaguri, West Bengal, India   "    ]      ,
+[   "   marker  176 "   ,   21.166229   ,   75.858452   ,   "   Lat :   21.166229   <br>    Lon :   75.858452   <br>    Company Name And Address:   CSCentre-Deepali Reva Chaudhary, Faizpur, Maharashtra, India    "    ]      ,
+[   "   marker  177 "   ,   12.90079    ,   80.093719   ,   "   Lat :   12.90079    <br>    Lon :   80.093719   <br>    Company Name And Address:   Shriram Gateway, Chennai, Tamil Nadu, India "    ]      ,
+[   "   marker  178 "   ,   10.251011   ,   78.119896   ,   "   Lat :   10.251011   <br>    Lon :   78.119896   <br>    Company Name And Address:   Apna Csc, Vembarpatti, Tamil Nadu, India    "    ]      ,
+[   "   marker  179 "   ,   25.475433   ,   80.347626   ,   "   Lat :   25.475433   <br>    Lon :   80.347626   <br>    Company Name And Address:   Raj Infotech And Enterprises, Banda, Uttar Pradesh, India   "    ]      ,
+[   "   marker  180 "   ,   10.103307   ,   77.846916   ,   "   Lat :   10.103307   <br>    Lon :   77.846916   <br>    Company Name And Address:   APNA CSC Point, Kundala Patti, Tamil Nadu, India    "    ]      ,
+[   "   marker  181 "   ,   28.635649   ,   77.310799   ,   "   Lat :   28.635649   <br>    Lon :   77.310799   <br>    Company Name And Address:   Medizin, Patparganj, New Delhi, Delhi, India    "    ]      ,
+[   "   marker  182 "   ,   25.411255   ,   81.876953   ,   "   Lat :   25.411255   <br>    Lon :   81.876953   <br>    Company Name And Address:   PRAYAG JAN SUVIDHA KENDRA, Allahabad, Uttar Pradesh, India  "    ]      ,
+[   "   marker  183 "   ,   19.121105   ,   72.870262   ,   "   Lat :   19.121105   <br>    Lon :   72.870262   <br>    Company Name And Address:   SME Chamber of India, Andheri East Mumbai, Maharashtra, India   "    ]      ,
+[   "   marker  184 "   ,   26.686581   ,   72.698082   ,   "   Lat :   26.686581   <br>    Lon :   72.698082   <br>    Company Name And Address:   Mahadev Computers, Cherai, Jodhpur, Rajasthan, India    "    ]      ,
+[   "   marker  185 "   ,   23.388195   ,   88.500336   ,   "   Lat :   23.388195   <br>    Lon :   88.500336   <br>    Company Name And Address:   S N Bhattacharya Road, Saktinagar, West Bengal, India   "    ]      ,
+[   "   marker  186 "   ,   28.380888   ,   79.432442   ,   "   Lat :   28.380888   <br>    Lon :   79.432442   <br>    Company Name And Address:   UPKAR Computer and Coaching Center, Bareilly, UttarPradesh, India   "    ]      ,
+[   "   marker  187 "   ,   18.46015    ,   73.85096    ,   "   Lat :   18.46015    <br>    Lon :   73.85096    <br>    Company Name And Address:   CADCAMGURU Solutions Pvt. Ltd. HO, Dhankawadi, Pune, Maharashtra, India "    ]      ,
+[   "   marker  188 "   ,   19.453402   ,   75.168655   ,   "   Lat :   19.453402   <br>    Lon :   75.168655   <br>    Company Name And Address:   Dnyaneshwari Dal Mill & Poultry Farm, Ahmednagar, Maharashtra, India    "    ]      ,
+[   "   marker  189 "   ,   17.516375   ,   78.379211   ,   "   Lat :   17.516375   <br>    Lon :   78.379211   <br>    Company Name And Address:   Cabello Braids Hair Extensions, Nizampet, Hyderabad, Telangana, India   "    ]      ,
+[   "   marker  190 "   ,   23.352657   ,   80.979973   ,   "   Lat :   23.352657   <br>    Lon :   80.979973   <br>    Company Name And Address:   Pushpa Computers, Nowrozabad, Madhya Pradesh, India "    ]      ,
+[   "   marker  191 "   ,   25.613222   ,   85.11721    ,   "   Lat :   25.613222   <br>    Lon :   85.11721    <br>    Company Name And Address:   Jagdamba Tower, Sri Krishna Puri, Patna, Bihar, India   "    ]      ,
+[   "   marker  192 "   ,   19.899864   ,   83.159317   ,   "   Lat :   19.899864   <br>    Lon :   83.159317   <br>    Company Name And Address:   NIC District Unit Kalahandi, Bhawanipatna, Odisha, India    "    ]      ,
+[   "   marker  193 "   ,   22.743729   ,   75.848427   ,   "   Lat :   22.743729   <br>    Lon :   75.848427   <br>    Company Name And Address:   Agrawal Computers, Nanda Nagar, Indore, Madhya Pradesh, India   "    ]      ,
+[   "   marker  194 "   ,   27.731262   ,   81.159172   ,   "   Lat :   27.731262   <br>    Lon :   81.159172   <br>    Company Name And Address:   SAKSHI Computers, Tambaur, Uttar Pradesh, India "    ]      ,
+[   "   marker  195 "   ,   23.699282   ,   72.54258    ,   "   Lat :   23.699282   <br>    Lon :   72.54258    <br>    Company Name And Address:   Aurosoft Technologies, Visnagar, Gujarat, India "    ]      ,
+[   "   marker  196 "   ,   26.590305   ,   94.24585    ,   "   Lat :   26.590305   <br>    Lon :   94.24585    <br>    Company Name And Address:   Print Parijat & Sbi Csp, Letekujan Grant, Assam, India  "    ]      ,
+[   "   marker  197 "   ,   19.873734   ,   75.344925   ,   "   Lat :   19.873734   <br>    Lon :   75.344925   <br>    Company Name And Address:   Mahagram Payments Pvt Ltd., Aurangabad, Maharashtra, India  "    ]      ,
+[   "   marker  198 "   ,   22.292511   ,   73.164375   ,   "   Lat :   22.292511   <br>    Lon :   73.164375   <br>    Company Name And Address:   Old Padra Rd, Vadodara, Gujarat, India  "    ]      ,
+[   "   marker  199 "   ,   21.80456    ,   87.226166   ,   "   Lat :   21.80456    <br>    Lon :   87.226166   <br>    Company Name And Address:   Internet Cafe, Jaleswar, Odisha, India  "    ]      ,
+[   "   marker  200 "   ,   27.939165   ,   77.842567   ,   "   Lat :   27.939165   <br>    Lon :   77.842567   <br>    Company Name And Address:   Om Sai CSC Center, Khair, Uttar Pradesh, India  "    ]      ,
+[   "   marker  201 "   ,   11.016565   ,   76.945915   ,   "   Lat :   11.016565   <br>    Lon :   76.945915   <br>    Company Name And Address:   Gass Forest Museum, Coimbatore, Tamil Nadu, India   "    ]      ,
+[   "   marker  202 "   ,   25.371328   ,   81.881104   ,   "   Lat :   25.371328   <br>    Lon :   81.881104   <br>    Company Name And Address:   Alstom company ARIVA, Chaka, Naini, Allahabad, India    "    ]      ,
+[   "   marker  203 "   ,   25.258804   ,   86.990768   ,   "   Lat :   25.258804   <br>    Lon :   86.990768   <br>    Company Name And Address:   EZIVERA Software & Web Development Company, Bhagalpur, Bihar, India "    ]      ,
+[   "   marker  204 "   ,   17.487816   ,   78.386894   ,   "   Lat :   17.487816   <br>    Lon :   78.386894   <br>    Company Name And Address:   MNJ Consulting Engineers, KPHB Colony, Hyderabad, India "    ]      ,
+[   "   marker  205 "   ,   30.647413   ,   76.808205   ,   "   Lat :   30.647413   <br>    Lon :   76.808205   <br>    Company Name And Address:   Address Makers, Zirakpur, Chandigarh, India "    ]      ,
+[   "   marker  206 "   ,   26.022024   ,   93.775169   ,   "   Lat :   26.022024   <br>    Lon :   93.775169   <br>    Company Name And Address:   Bokajan, Assam, India   "    ]      ,
+[   "   marker  207 "   ,   11.320627   ,   75.751305   ,   "   Lat :   11.320627   <br>    Lon :   75.751305   <br>    Company Name And Address:   Nova iT Park, Vengali, India    "    ]      ,
+[   "   marker  208 "   ,   8.520929    ,   76.9412 ,   "   Lat :   8.520929    <br>    Lon :   76.9412 <br>    Company Name And Address:   Pattom, Thiruvananthapuram, Kerala, India   "    ]      ,
+[   "   marker  209 "   ,   26.94121    ,   75.771057   ,   "   Lat :   26.94121    <br>    Lon :   75.771057   <br>    Company Name And Address:   Adidas Triton Mall, Jaipur, Rajasthan, India    "    ]      ,
+[   "   marker  210 "   ,   12.364874   ,   80.012268   ,   "   Lat :   12.364874   <br>    Lon :   80.012268   <br>    Company Name And Address:   Ammanur, Tamil Nadu, India  "    ]      ,
+[   "   marker  211 "   ,   12.934885   ,   77.696205   ,   "   Lat :   12.934885   <br>    Lon :   77.696205   <br>    Company Name And Address:   Cisco Systems, Bangalore, Karnataka, India  "    ]      ,
+[   "   marker  212 "   ,   17.418974   ,   78.526596   ,   "   Lat :   17.418974   <br>    Lon :   78.526596   <br>    Company Name And Address:   Osmania University Arts College, Osmania University, Amberpet, Hyderabad, Andhra Pradesh, India "    ]      ,
+[   "   marker  213 "   ,   12.949282   ,   80.255013   ,   "   Lat :   12.949282   <br>    Lon :   80.255013   <br>    Company Name And Address:   Neelankarai, Chennai, Tamil Nadu, India "    ]      
+
+        ];
+
+        /*iterate on size of latitiude longitude set*/
+        var markerIcon = L.icon({
+        iconUrl: 'img/complogo.png',
+        iconSize:     [30,30]});
+        for (var i = 0; i < LatLng.length; i++) {
+        new L.marker([LatLng[i][1],LatLng[i][2]],{icon: markerIcon})
+                .bindPopup(LatLng[i][3]).addTo(map);
+        }
+        /*Latitude,Longitude set*/
+                var lat = 28.6129602407977;
+            var lon = 77.22945570945740;
+            var radius = 2500;
+            var marker;
+            var currentDiameter;
+            window.onload = function () {
+                document.getElementById('lat').value = lat;
+                document.getElementById('lon').value = lon;
+                document.getElementById('radius').value = radius;
+                if (lat != '' && lon != '' && radius != '') {
+                    if (checkValidLatlong(parseFloat(lat), parseFloat(lon))) {
+                        var centre = new L.LatLng(lat, lon);
+                                               
+                        /*1.create a MapmyIndia Map by simply calling new MapmyIndia.Map() and passing it at the minimum div object, all others are optional...
+                         2.all leaflet mapping functions can be called simply on the L object
+                         3.MapmyIndia may extend and in future modify the customised/forked Leaflet object to enhance mapping functionality for developers, which will be clearly documented in the MapmyIndia API documentation section.*/
+                        var icon = L.icon({iconUrl: 'img/userloc.png', iconRetinaUrl: 'img/userloc.png', iconSize: [50, 50]}); 
+                        marker = L.marker(centre, {icon: icon, draggable: true}).addTo(map);
+                        marker.on('dragend', function (event) {
+                            var position = event.target.getLatLng();
+                            document.getElementById('lat').value = position.lat;/***set div elements values***/
+                            document.getElementById('lon').value = position.lng;
+                            showCircle();
+                        });
+                        showCircle();
+                    }
+                }
+                else {
+                    document.getElementById('result').innerHTML = "Please enter lat/lon/radius";
+                }
+            };
+            function showCircle() {
+                document.getElementById('result').innerHTML = "";
+                if (currentDiameter)
+                    map.removeLayer(currentDiameter);
+                lat = document.getElementById('lat').value;
+                lon = document.getElementById('lon').value;
+                radius = document.getElementById('radius').value;
+                if (lat != '' && lon != '' && radius != '') {
+                    if (checkValidLatlong(parseFloat(lat), parseFloat(lon))) {
+                        if (marker)
+                            marker.setLatLng([lat, lon]);
+                        currentDiameter = L.circle([lat, lon], {
+                            color: 'pink',
+                            fillColor: '#FFC0CB',
+                            fillOpacity: 0.5,
+                            radius: radius
+                        });
+                        currentDiameter.addTo(map);
+                        map.fitBounds(currentDiameter.getBounds());
+                    }
+                }
+                else {
+                    document.getElementById('result').innerHTML = "Insufficient parameters";
+                }
+            }
+            function isNumberKeyDecimals(evt) {
+                /*check for input boxes*/
+                var charCode = (evt.which) ? evt.which : event.keyCode
+                if (charCode > 31 && (charCode != 46 && (charCode < 48 || charCode > 57)))
+                    return false;
+                return true;
+            }
+            function checkValidLatlong(lat, lon) {
+                /*check for input as valid lat lon*/
+                if (lat >= 180 || lat <= -180 || lon >= 180 || lon <= -180) {
+                    document.getElementById('result').innerHTML = "Invalid Lat lon values";
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+
+    
+            <div style="border-bottom: 1px solid #e9e9e9;padding:10px 12px;background:#fff;"><span style="font-size: 20px">MapmyIndia Maps API:</span> <span style="font-size:16px;color:#777">Circle Example</span></div>
+            <div id="menu">
+                <div style="padding: 0 12px 0 12px"> <div style="padding: 5px 0;font-size:13px;color:#222">Enter Latitude</div>
+                    <input type="text" style="width: 254px; margin-right: 10px;padding:5px;border:1px solid #ddd;color:#555" id="lat" placeholder="Latitude" autocomplete="off" onkeypress="if (event.which == 13 || event.keyCode == 13)
+                                showCircle();
+                            return isNumberKeyDecimals(event);"><br/>
+                        <div style="padding: 5px 0;font-size:13px;color:#222">Enter Longitude</div>
+                        <input type="text" style="width: 254px; margin-right: 10px;padding:5px;border:1px solid #ddd;color:#555" id="lon" placeholder="longitude" autocomplete="off" onkeypress="if (event.which == 13 || event.keyCode == 13)
+                                    showCircle();
+                                return isNumberKeyDecimals(event);"/>
+                        <div style="padding: 5px 0;font-size:13px;color:#222">Enter Radius (in m)</div>
+                        <input type="number" style="width: 254px; margin-right: 10px;padding:5px;border:1px solid #ddd;color:#555" id="radius" placeholder="radius" autocomplete="off" onkeypress="if (event.which == 13 || event.keyCode == 13)
+                                    showCircle();
+                                return isNumberKeyDecimals(event);"/>
+                        <br/><br/><button onclick="showCircle();">Search</button>
+                </div>
+                <div style="margin-top: 20px">
+                    <ul style=" line-height: 20px; font-size: 12px;">
+                        <li>Drag marker to geofence at your desired location</li>
+                    </ul>
+                </div>
+                <div style="border-top: 1px solid #e9e9e9;margin-top: 20px;padding: 10px 10px 5px 17px;font-size: 13px;" id="result">loading..</div>
+            </div>
+            <!--put your map container here-->
+            
+       
+    </body>
+</html>
