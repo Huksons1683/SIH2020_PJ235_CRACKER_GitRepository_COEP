@@ -42,7 +42,7 @@ function findNearestMarker(coords) {
   //Step 2: initialize a map
   var map = new H.Map(document.getElementById('map'),
 	defaultLayers.vector.normal.map,{
-	center: {lat: 28.41352, lng: 77.3467},
+	center: {lat: 28.40788, lng: 77.341	},
 	zoom: 16,
 	pixelRatio: window.devicePixelRatio || 1
   });
