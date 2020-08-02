@@ -42,7 +42,7 @@ function findNearestMarker(coords) {
   //Step 2: initialize a map
   var map = new H.Map(document.getElementById('map'),
 	defaultLayers.vector.normal.map,{
-	center: {lat: 60.1697, lng:24.8292},
+	center: {lat:  20.318215, lng: 85.824561},
 	zoom: 16,
 	pixelRatio: window.devicePixelRatio || 1
   });
@@ -69,12 +69,16 @@ function findNearestMarker(coords) {
   }
   
   // Set up five markers.
-  var coords = [{ lat:60.1697, lng:24.8292},
-	{ lat: 60.1704, lng: 24.8285 },
-	{ lat: 60.1709, lng: 24.8277 },
-	{ lat: 60.1700, lng: 24.8265 },
-	{ lat:60.1700, lng: 24.8283}];
-  
+  var coords = [{ lat:28.40555, lng: 77.31369},
+	{  lat:28.37383 , lng:77.35571},
+	{  lat:28.34133 , lng:77.19565},
+	{ lat:28.33198 , lng:77.20968},
+	{ lat:28.38982 , lng:77.36067}];
+
+     // lat:28.27895 , lng:77.28822
+	// lat:28.45053 , lng:77.28352
+	// lat:28.42011 , lng:77.34608
+	  
   //Create the svg mark-up
   var svgMarkup = '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">' +
 	  '<rect stroke="white" fill="#1b468d" x="1" y="1" width="22" height="22" />' +
@@ -123,4 +127,6 @@ function findNearestMarker(coords) {
   
   // Add the click event listener.
   addClickEventListenerToMap(map);
+
+
   
